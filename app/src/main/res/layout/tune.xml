@@ -10,61 +10,65 @@
         android:id="@+id/songTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.667" />
 
     <Button
         android:id="@+id/playButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Play"
-        app:layout_constraintBottom_toTopOf="@+id/songTitle"
+        android:text="@string/play"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/songTitle" />
 
     <Button
         android:id="@+id/voraus10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Voraus 10 sekunden"
-        app:layout_constraintBottom_toTopOf="@+id/songTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/playButton" />
+        android:layout_width="150dp"
+        android:layout_height="63dp"
+        android:text="@string/forward"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/nextSong"
+        app:layout_constraintStart_toStartOf="@+id/nextSong"
+        app:layout_constraintTop_toBottomOf="@+id/nextSong"
+        app:layout_constraintVertical_bias="0.198" />
 
     <Button
         android:id="@+id/zuruck10"
-        android:layout_width="144dp"
+        android:layout_width="150dp"
         android:layout_height="63dp"
-        android:text="Zurueck 10 sekunden"
-        app:layout_constraintBottom_toTopOf="@+id/songTitle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/voraus10" />
+        android:text="@string/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/prevSong"
+        app:layout_constraintStart_toStartOf="@+id/prevSong"
+        app:layout_constraintTop_toBottomOf="@+id/prevSong"
+        app:layout_constraintVertical_bias="0.198" />
 
     <Button
         android:id="@+id/prevSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Prev song"
+        android:text="@string/prev_song"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/zuruck10"
+        app:layout_constraintEnd_toStartOf="@+id/songTitle"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604" />
 
     <Button
         android:id="@+id/nextSong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:text="next song"
+        android:text="@string/next_song"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/zuruck10"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toEndOf="@+id/songTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.604" />
 </androidx.constraintlayout.widget.ConstraintLayout>

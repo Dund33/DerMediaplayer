@@ -2,4 +2,9 @@
     <string name="app_name">DerMediaplayer</string>
     <string name="pause">Pause</string>
     <string name="resume">Resume</string>
+    <string name="forward">+10s</string>
+    <string name="back">-10s</string>
+    <string name="prev_song"><![CDATA[<<]]></string>
+    <string name="next_song"><![CDATA[>>]]></string>
+    <string name="play">play</string>
 </resources>
