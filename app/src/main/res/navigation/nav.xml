@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/tunesListFragment">
+
+    <fragment
+        android:id="@+id/tunesListFragment"
+        android:name="com.lukdro.dermediaplayer.TunesListFragment"
+        android:label="TunesListFragment">
+        <action
+            android:id="@+id/action_tunesListFragment_to_tuneFragment"
+            app:destination="@id/tuneFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tuneFragment"
+        android:name="com.lukdro.dermediaplayer.TuneFragment"
+        android:label="TuneFragment" >
+        <argument android:name="tuneId"
+            app:argType="integer" />
+    </fragment>
+</navigation>
